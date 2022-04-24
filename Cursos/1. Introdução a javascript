@@ -1,0 +1,24 @@
+Introdução a javascript
+
+
+
+Console em uma página da web
+
+inspecionar -> console
+
+Console no terminal 
+
+instalar node.js
+$ node arquivo.js
+
+
+- Estrutura de projeto - 
+
+index.html
+assets -> js / css -> scripts.js / styles.css
+
+<link rel="stylesheet" href="assets/css/styles.css" />
+<script src="assets/js/scripts.js"> </script>
+
+DOM - Document Object Model
+Estrutura dos elementos

@@ -1,8 +1,68 @@
 Introdução a javascript
 
 
+- Javascript -
 
-Console em uma página da web
+- Linguagem interpretada: Rodada em tempo real e disponibilizado instantaneamente 
+- Baseada em protótipos: Base da maioria das estruturas de dados em Javascript 
+- Multiparadigma: Várias formas de estruturar o código como, Orientação a objetos, funcional e estruturada
+- Utilizada bastante em aplicações web client-side: Linguagem que Browser entende para interagir com o usuário
+- Segue o padrão ECMAScript: Conjunto de normas que diz quais funcionalidades estarão presentes nas atualizações 
+
+
+
+- Evolução Javascript -
+
+- ECMAScript 1: Primeira edição
+- ECMAScript 2: Apenas mudanças regulares
+- ECMAScript 3: Expressões regulares e try/catch
+- ECMAScript 4: Nenhuma mudança drástica 
+- ECMAScript 5: Strict Mode, Json, Métodos e funções para arrays
+- ECMAScript 6: Muitas atualizações
+
+
+
+- Aplicações -
+
+- Web
+- Mobile
+- Smartwatch 
+- Games
+- Internet of things
+- APIs
+
+
+
+- Comentário -
+
+//comentário
+
+/* comentário com
+mais de uma linha */
+
+
+
+- Variável - 
+
+var preco = 5;
+
+- Constante - 
+
+const PRECO = 2;
+
+
+
+- Funções -
+
+function soma(a, b) {
+   return a + b;
+}
+
+soma(3, 5);
+
+
+
+- Console em uma página da web -
 
 inspecionar -> console
 
@@ -10,6 +70,7 @@ Console no terminal
 
 instalar node.js
 $ node arquivo.js
+
 
 
 - Estrutura de projeto - 
@@ -22,3 +83,21 @@ assets -> js / css -> scripts.js / styles.css
 
 DOM - Document Object Model
 Estrutura dos elementos
+
+
+
+- Mercado de trabalho -
+
+- Framework e biblioteca: Ferramentas desenvolvidas para mais facilidade e rapidez no desenvolvimento de código no javascript. Exemplos são:
+VueJS, Angular, React e jQuery.
+- MDN Web Docs
+- W3C
+- DIO
+- Stack Overflow 
+- Youtube
+- LinkedIn 
+- Github
+- Twitter 
+
+
+

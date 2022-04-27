@@ -1,19 +1,34 @@
 var compara = 0;
 
+function juntarStrings(num1,num2){
+   const primeirafrase = comparaNum(num1, num2);
+   const segundafrase = comparaSoma(num1, num2);
+   return '${primeirafrase} ${segundafrase}';
+
+}
 
 function comparaNum(num1,num2){
     if(num1 == num2){
         compara++;
     }
-    return num1,num2
+    if(compara == 1){
+    return ('Os números ' + num1 + ' e ' + num2 + ' são iguais. ');
+    }else{
+    return ('Os números ' + num1 + ' e ' + num2 + ' não são iguais. ');
+    }
 }
 
 function comparaSoma(num1,num2){
-    var soma = num1 + num2 
-    if(soma > 10 ){
-
+    var soma = num1 + num2;
+    var compara10 = 'menor';
+    var compara20 = 'menor';
+    if(soma > 10){
+       compara10 = 'maior';
     }
-    (soma < 20) ? {}
+    if(soma > 20){
+       compara20 = 'maior';
+    }
+       return ('Sua soma é ' + soma + ', que é ' + compara10 + ' que 10 e ' + compara20 + ' que 20.');
 }
 
-console.log("Os números " + comparaNum(imput any,any))
+console.log(juntarStrings(10,10));

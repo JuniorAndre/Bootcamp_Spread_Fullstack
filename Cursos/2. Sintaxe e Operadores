@@ -1,0 +1,48 @@
+Sintaxe e Operadores
+
+Tipos de operadores
+
+Atribuição
+=    x=y
++=   x=x+y
+*=   x=x*y
+/=   x=x/y
+%=   x=x%y
+
+Aritmética
++    adição 
+-    subtração
+*    multiplicação
+**   exponencial
+/    divisão 
+%    módulo 
+++   incrementar
+--   decrementar
+
+Comparação 
+==    igual a
+===   mesmo valor e mesmo tipo
+!=    diferente 
+!==   valor e tipo diferente
+>     maior que
+<     menor que
+>=    maior ou igual
+<=    menor ou igual
+
+Lógica 
+&&    "e" lógico 
+||    "ou" lógico 
+!     "não" lógico 
+
+Condicional
+if ternário 
+(condition) ? expression1 : expression2
+
+
+
+
+
+
+
+
+

@@ -3,8 +3,7 @@ var compara = 0;
 function juntarStrings(num1,num2){
    const primeirafrase = comparaNum(num1, num2);
    const segundafrase = comparaSoma(num1, num2);
-   return '${primeirafrase} ${segundafrase}';
-
+   return primeirafrase + segundafrase;
 }
 
 function comparaNum(num1,num2){
@@ -31,4 +30,4 @@ function comparaSoma(num1,num2){
        return ('Sua soma é ' + soma + ', que é ' + compara10 + ' que 10 e ' + compara20 + ' que 20.');
 }
 
-console.log(juntarStrings(10,10));
+console.log(juntarStrings(10,5));

@@ -18,9 +18,9 @@ function comparaNum(num1,num2){
 }
 
 function comparaSoma(num1,num2){
-    var soma = num1 + num2;
-    var compara10 = 'menor';
-    var compara20 = 'menor';
+    let soma = num1 + num2;
+    let compara10 = 'menor';
+    let compara20 = 'menor';
     if(soma > 10){
        compara10 = 'maior';
     }

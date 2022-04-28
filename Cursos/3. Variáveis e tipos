@@ -1,0 +1,79 @@
+Variáveis e tipos
+
+
+Atribuições de valores (Case Type)
+
+Original Variable as String - some awesome var 
+Camel case - someAwesomeVar 
+Snake case - some_awesome_var 
+Kebab case - some-awesome-var 
+Pascal case - SomeAwesomeVar 
+Upper snake case - SOME_AWESOME_VAR 
+
+
+Var, Let e Const
+
+
+Var
+
+Tem escopo global
+Pode fazer hoisting
+Pode redeclarar
+Pode reatribuir 
+
+
+Let
+
+Tem escopo por bloco
+Não pode fazer hoisting
+Não pode redeclarar
+Pode reatribuir 
+
+
+Const
+
+Tem escopo por bloco
+Não pode fazer hoisting
+Não pode redeclarar
+Não pode reatribuir
+
+
+
+Tipos de estruturas de dados
+
+Javascript é uma linguagem de tipagem dinâmica, ou seja, antes de declarar um valor se especifica o tipo dele.
+Pode ser primitivos: numbers, strings, booleans, null, undefined.
+Pode ser composto: Objects e arrays.
+
+
+String (utilizada para textos, declarados entre aspas ou crases)
+
+string.concat(string2) - concatenar duas strings
+string.length - tamanho da string
+new String("string") - objeto string
+string[1] - índice da string
+string.split("") - separar letras da string
+string.includes("tudo") - Verificar se tem a palavra 
+string.startsWith('R') - Verificar se começa a string com a letra escolhida
+string.endsWith("?") - Verificar se termina com a letra escolhida
+string.replace(","' "?") - Trocar a letra ou símbolo por outra
+
+
+
+Numbers (Números inteiros ou decimais)
+
+Math.PI - Número PI
+Math.floor(num) - Arredondar para baixo
+Math.ceil(num) - Arredondar para cima
+
+
+Booleans (Valores lógicos)
+
+
+
+
+
+
+
+
+

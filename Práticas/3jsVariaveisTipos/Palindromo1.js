@@ -5,7 +5,6 @@ function palindromo(string){
     let primeiraLetra = string[0];
     let ultimaLetra = string[string.length];
     for(let i=0; i < string.length; i++){
-        for(let j=string.length; j > 0; j--){
             let primeiraLetra = string[i];
             let ultimaLetra = string[j];
             if(primeiraLetra == ultimaLetra){
@@ -13,7 +12,6 @@ function palindromo(string){
             }else{
                 array.push(0);
             }
-        }
     }
     if(array.every(item => item == 1)){
         console.log(string + " é um palíndromo");

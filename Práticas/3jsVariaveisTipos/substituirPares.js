@@ -7,7 +7,7 @@ function trocarPares(array){
         }
     }
     if(array.length == 0){
-        return -1;
+        return console.log(-1);
     }else{
         console.log(array)
     }

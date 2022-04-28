@@ -69,11 +69,48 @@ Math.ceil(num) - Arredondar para cima
 
 Booleans (Valores lógicos)
 
+false
+true
 
 
+Arrays (Lista iterável de elementos)
+
+array.push(3) - adicionar elemento
+array.pop() - retira o elemento final do array
+array.shift() - retira o elemento do início do array
+array.unshift(1) - adiciona o elemento para o início do array
+for(let i = 0; i < array.length; i++) {
+Console.log(array[i]);
+}                       - iterar um array
+array.includes(3) - Verificar se existe tal elemento
+array.every(item => item === 5) - Verificar se todos os elementos do array são iguais a tal elemento
+array.some(item => item === 5) - Verificar se algum dos elementos do array é igual a tal elemento
+array.reverse() - reverte os elementos, espelha.
+array.length - tamanho do array
 
 
+Object (Estrutura do tipo chave e valor, let obj= {})
 
+obj.name = "Julia" - adiciona chave name com valor "julia"
+obj.age = 20 - adiciona chave age com valor 20
+Object.values(obj) - retorna os valores desse objeto
+Object.keys(obj) - retorna às chaves desse objeto
+let person = {
+   name: "Julia",
+   age: 20,
+   adress: "Rua 2"
+}
+person.name  ou  person["name"] - retorna o valor da chave
+person["numberOfSiblings"] = 3 - outra forma de criar chave e valor
+person[mom] = "Maria" - cria chave como nome da variável mom e atribui valor "Maria"
+
+
+Empty, Null e Undefined (falsy values)
+
+let abacaxi - valor indefinido, declarados mas não atribui valor
+let abacaxi = null - valor de abacaxi declarado como nulo
+let abacaxi = "" - valor de abacaxi declarado como vazio
+Possuem um valor falso diferente do falso booleano.
 
 
 

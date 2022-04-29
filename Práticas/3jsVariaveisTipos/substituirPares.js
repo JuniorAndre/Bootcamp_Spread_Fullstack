@@ -8,8 +8,6 @@ function trocarPares(array){
     }
     if(!array.length){
         return console.log(-1);
-    }if else(array[i] != number){
-        console.log("Não é um número")
     }else{
         console.log(array)
     }

@@ -1,0 +1,225 @@
+Funções 
+
+
+- Estrutura -
+
+Variáveis criadas dentro de uma função apenas pode ser usadas dentro dela.
+Quando invoca o return, a função para de ser executada
+
+function nome(parametros){
+   return;
+}
+
+
+
+- Função anônima -
+
+- Representam expressões
+- Uma variável pode armazenar uma função 
+
+const soma = function (a,b){
+   return a + b;
+}
+soma(1,2);
+
+
+
+- Função autoinvocável - 
+
+- Uma função anônima entre parênteses seguida por outro par de parênteses, representando sua chamada
+
+(
+function() {
+   let name = "Digital Innovation One"
+   return name;
+}
+)();
+
+
+
+
+- Função callback -
+
+- Uma função passada com argumento para outra função
+- Tem maior controle da ordem de chamadas
+
+const calc = function(operação, num1, num2){
+   return operacao(num1, num2);
+}
+
+const soma = function(num1, num2){
+   return num1 + num2;
+}
+
+const resultSoma = calc(soma, 1, 2);
+
+console.log(resultSoma);
+
+
+
+Parâmetros 
+
+
+Pré-ES2015
+
+function exponencial(array, num){
+   if(num === undefined){
+      num = 1;
+   }
+}
+
+
+Pós-ES2015
+
+function exponencial(array, num = 1){
+
+}
+
+
+
+- Objeto arguments -
+
+Um array com todos os parâmetros passados quando a função foi chamada
+
+function findMax(){
+   let Max = -Infinity;
+   
+   for(let i = 0; i < arguments.length; i++){
+      if(arguments[i] > max){
+         max = arguments[i];
+      }
+   }
+   return max;
+}
+
+
+
+- Arrays -
+
+Spread: Uma forma de lidar separadamente com elementos, então o que era parte de um array se torna um elemento independente.
+
+num(...numbers)
+
+
+Rest: Combina os argumentos em um array, então o que era um elemento independente se torna parte de um array.
+
+function confereTamanho(...args){
+   console.log(args.length);
+}
+
+
+
+- Object - 
+
+Object destructuring: Entre chaves {} podemos filtrar apenas os dados que nos interessam em um objeto.
+
+function userId({id}){
+   return id;
+}
+userId(user);
+
+
+
+Loops
+
+
+- If/else (condição) -
+
+if(num < 0){
+   resultado = false;
+}else{
+   resultado = true;
+}
+
+
+É possível guardar condicionais em variáveis 
+
+const eNegativo = num < 0;
+
+if(eNegativo){
+   return "Esse número é negativo!";
+}else if(!eNegativo && maiorQueDez){
+   return "Esse número é positivo e maior que dez!";
+}
+
+Javascript não tem elseif juntos
+
+
+
+- Switch/case -
+
+- Equivale a uma comparação de tipo e valor (===)
+- Sempre precisa de um valor "default"
+- Ideal para quando se precisa comparar muitos valores
+
+function getAnimal(id){
+   switch(id){
+      case 1:
+         return "cão";
+      case 2:
+         return "gato";
+      case 3:
+         return "pássaro";
+      default:
+         return "peixe";
+   }
+}
+
+
+
+- For -
+
+Loop dentro de elementos iteráveis (arrays, strings)
+
+for(let i=0; i< arr.length; i++){
+   multiplicados.push(arr[i] * 2);
+}
+
+for...in - Loop entre propriedades enumeradas se um objeto
+
+function forInExemplo(obj){
+   for(prop in obj){
+      Console.log(prop);
+   }
+}
+
+for...of - Loop entre estruturas iteráveis (arrays, strings)
+
+function logLetras(palavra){
+   for(letra of palavra){
+      Console.log(letra);
+   }
+}
+
+
+
+- White e do...White -
+
+
+While - Executa instruções até que a condição se torne falsa
+
+while(num <= 5){
+   Console.log(num);
+      num++;
+   }
+}
+
+Do...while - Executa até que a condição se torne falsa porém a primeira execução sempre ocorre
+
+ do {
+   console.log(num);
+   num++;
+ } while(num <= 5)
+
+
+
+This
+
+
+- O que é this -
+
+ffff
+
+
+
+

@@ -1,15 +1,15 @@
-const alunos = new Object{
+const alunos = {
     Clara: 65, 
     Pedro: 50,
     Daniel: 89,
     Guto: 76,
 }
 
-function alunosAprovados(object, num){
-    let num = 7;
-    for(let i=0; i < object.length; i++){
-        if(object.values(i) = num){
-            console.log(object.keys(i) + ' foi aprovado!')
+function alunosAprovados(array, media){
+    let media = 7;
+    for(let i=0; i < .array.length; i++){
+        if(array.[i] = num){
+            console.log(array[i] + ' foi aprovado!')
         }
     }
 

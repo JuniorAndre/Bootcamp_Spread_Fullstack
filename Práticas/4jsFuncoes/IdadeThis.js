@@ -1,6 +1,6 @@
 const pessoa = {
     nome: 'Paulo',
-    idade: 25,
+    idade: 26,
 }
 
 const animal = {
@@ -14,5 +14,5 @@ function calculaIdade(anos) {
     } anos de idade.`;
 }
 
-console.log(calculaIdade.call(pessoa, 15));
-console.log(calculaIdade.apply(animal, [15]));
+console.log(calculaIdade.call(pessoa, 6));
+console.log(calculaIdade.apply(animal, [6]));

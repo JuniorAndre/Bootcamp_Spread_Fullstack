@@ -1,5 +1,5 @@
 const pessoa = {
-    nome: Paulo,
+    nome: 'Paulo',
     idade: 25,
 }
 
@@ -9,4 +9,4 @@ function calculaIdade(anos) {
     } anos de idade.`;
 }
 
-calculaIdade.call(pessoa, 15);
+console.log(calculaIdade.call(pessoa, 15));

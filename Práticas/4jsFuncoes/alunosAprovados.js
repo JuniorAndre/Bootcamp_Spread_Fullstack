@@ -1,9 +1,25 @@
-const alunos = {
-    Clara: 65, 
-    Pedro: 50,
-    Daniel: 89,
-    Guto: 76,
-}
+const alunos = [
+    {
+        Nome: Clara,
+        Nota: 65,
+        Turma: 1B,
+    },
+    {
+        Nome: Pedro,
+        Nota: 50,
+        Turma: 1B,
+    },
+    {
+        Nome: Daniel,
+        Nota: 89,
+        Turma: 2C,
+    },
+    {
+        Nome: Guto,
+        Nota: 76,
+        Turma: 2C,
+    }
+]
 
 function alunosAprovados(array, media){
     let aprovados = [];

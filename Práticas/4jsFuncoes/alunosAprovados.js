@@ -29,10 +29,9 @@ function alunosAprovados(array, media){
         if(Nota > media){
             console.log(Nome + ' foi aprovado!')
             aprovados.push(Nome);
-            console.log(aprovados);
         }
     }
-
+    console.log(aprovados);
 }
 
 alunosAprovados(alunos, 70);

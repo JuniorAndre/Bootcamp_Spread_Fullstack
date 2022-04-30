@@ -6,13 +6,15 @@ const alunos = {
 }
 
 function alunosAprovados(array, media){
-    let media = 7;
-    for(let i=0; i < .array.length; i++){
-        if(array.[i] = num){
+    let aprovados = [];
+    for(let i=0; i < array.length; i++){
+        if(array[i] == media){
             console.log(array[i] + ' foi aprovado!')
+            array.push(aprovados);
+            console.log(aprovados);
         }
     }
 
 }
-
+num  = 7;
 alunosAprovados(alunos, num);

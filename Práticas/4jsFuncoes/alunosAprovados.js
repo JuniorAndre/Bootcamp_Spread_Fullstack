@@ -24,13 +24,15 @@ const alunos = [
 function alunosAprovados(array, media){
     let aprovados = [];
     for(let i=0; i < array.length; i++){
-        if(array[i].Nota > media){
-            console.log(array[i].Nome + ' foi aprovado!')
-            array.push(aprovados);
+
+        const {Nome, Nota} = array[i];
+        if(Nota > media){
+            console.log(Nome + ' foi aprovado!')
+            aprovados.push(Nome);
             console.log(aprovados);
         }
     }
 
 }
-num = 70;
-alunosAprovados(alunos, num);
+
+alunosAprovados(alunos, 70);

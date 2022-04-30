@@ -304,6 +304,18 @@ bruno();
 
 - Arrow function -
 
+- Arrow function não faz hoisting
+- Quando tem um argumento pode deixar sem parênteses
+- "This" sempre será o objeto global. Métodos para modificar seu valor não irão funcionar 
+- Não existe o objeto "arguments"
+- O construtor não pode ser utilizado (ex: new meuObjeto())
+
+const helloWorld = () => {
+   return "Hello World";
+}
+
+const helloWorld = () => "Hello World":
+
 
 
 

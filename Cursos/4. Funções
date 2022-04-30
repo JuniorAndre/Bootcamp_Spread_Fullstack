@@ -218,7 +218,95 @@ This
 
 - O que é this -
 
-ffff
+Uma palavra reservada que é referência de contexto, dependendo de onde estiver.
+O valor muda dependendo do local no código em que foi chamada:
+
+- Em um objeto (método): Próprio objeto dono do método
+
+const pessoa = {
+   firstName: "André",
+   lastName: "Soares",
+   id: 1,
+   fullName: function() {
+      return this.firstName + " " + this.lastName;
+   },
+};
+
+- Sozinha: Objeto global(em navegadores, window)
+
+- Função: Objeto global
+
+- Evento (no html): Elemento que recebeu o evento
+
+
+
+Manipulando o this com métodos
+
+
+- Call -
+   
+const pessoa = {
+   nome: 'Miguel'
+}
+
+function getSomething() {
+   console.log(this.nome);
+}
+
+getSomething.call(pessoa);
+   
+- Faz uma chamada na referência do this
+- É possível passar parâmetros separados por vírgulas:
+
+const myObj = {
+   num1: 2,
+   num2: 4,
+};
+
+function soma(a, b) {
+   console.log(this.num1 + this.num2 + a + b);
+};
+
+soma.call(myObj, 1, 5);
+
+
+
+- Apply -
+
+- Passa parâmetros para a função dentro de um array
+
+const myObj = {
+   num1: 2,
+   num2: 4,
+};
+
+function soma(a, b) {
+   console.log(this.num1 + this.num2 + a + b);
+};
+
+soma.call(myObj, [1, 5]);
+
+
+
+- Bind -
+
+- Clona a estrutura da função em que é chamada e aplica o valor do objeto passado como parâmetro 
+
+const retornaNomes = function() {
+   return this.nome;
+};
+
+let Bruno = retornaNomes.bind({nome: 'Bruno'});
+
+bruno();
+
+
+
+- Arrow function -
+
+
+
+
 
 
 

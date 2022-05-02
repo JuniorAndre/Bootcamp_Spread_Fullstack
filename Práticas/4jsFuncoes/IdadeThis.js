@@ -5,7 +5,7 @@ const pessoa = {
 
 const animal = {
     nome:'Thonzinho',
-    idade: 3,
+    idade: 2,
 }
 
 function calculaIdade(anos) {
